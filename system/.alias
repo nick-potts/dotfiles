@@ -76,5 +76,5 @@ unset METHOD
 alias hosts="sudo $EDITOR /etc/hosts"
 alias quit="exit"
 alias week="date +%V"
-alias speedtest="wget -O /dev/null http://speed.transip.nl/100mb.bin"
+alias speedtest="wget -O /dev/null http://cachefly.cachefly.net/100mb.test"
 alias grip="grip -b"
