@@ -388,6 +388,10 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # Kill affected applications                                                  #
 ###############################################################################
 
+#set screen resolution
+DISPLAYID = displayplacer list | grep Persistent | cut -d ":" -f 2 
+displayplacer "id:${DISPLAYID} res:2048x1280"
+
 for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal"; do
   killall "${app}" &> /dev/null
 done
