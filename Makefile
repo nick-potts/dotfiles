@@ -63,7 +63,7 @@ ruby: brew
 	brew install ruby
 
 brew-packages: brew
-  brew tap jakehilborn/jakehilborn
+	brew tap jakehilborn/jakehilborn
 	brew bundle --file=$(DOTFILES_DIR)/install/Brewfile
 
 cask-apps: brew
