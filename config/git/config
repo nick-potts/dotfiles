@@ -1,13 +1,13 @@
 [user]
-	name = Lars Kappert
-	email = lars@webpro.nl
+	name = Nick Potts
+	email = github@nickpotts.com.au
 
 [github]
-	user = webpro
+	user = nick-potts
 
 [core]
 	excludesfile = ~/.config/git/ignore
-	editor = nano
+	editor = vi
 	filemode = false
 	trustctime = false
 	autocrlf = input
