@@ -44,10 +44,10 @@ brew "node@10"
 brew "watch"
 brew "displayplacer"
 
-mas 497799835
-mas 1295203466
-mas 425264550
-mas 472226235
-mas 897118787
-mas 1385985095
-mas 526298438
+mas "Xcode", id: 497799835
+mas "Microsoft Remote Desktop 10", id: 1295203466
+mas "Blackmagic Disk Speed Test", id: 425264550
+mas "LanScan", id: 472226235
+mas "Shazam", id: 897118787
+mas "uBlock", id: 1385985095
+mas "Lightshot Screenshot", id: 526298438
