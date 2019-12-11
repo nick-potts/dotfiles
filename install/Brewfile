@@ -1,4 +1,5 @@
 tap "goles/battery"
+tap "jakehilborn/jakehilborn"
 tap "homebrew/bundle"
 tap "homebrew/core"
 
@@ -39,4 +40,4 @@ brew "needle"
 brew "node@10"
 brew "swiftlint"
 brew "watch"
-brew "displayplacer" # requires brew tap jakehilborn/jakehilborn
+brew "displayplacer"
