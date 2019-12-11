@@ -53,16 +53,14 @@ bash: brew
 	if ! grep -q $(BASH) $(SHELLS); then brew install bash bash-completion@2 pcre && sudo append $(BASH) $(SHELLS) && chsh -s $(BASH); fi
 
 git: brew
-	brew bundle --file=- <<-EOS brew "git" brew "git-extras" EOS
+	brew bundle --file=$(DOTFILES_DIR)/install/git.Brewfile
 
 npm:
 	if ! [ -d $(NVM_DIR)/.git ]; then git clone https://github.com/creationix/nvm.git $(NVM_DIR); fi
 	. $(NVM_DIR)/nvm.sh; nvm install --lts
 
-ruby: brew
-	brew bundle --file=- <<-EOS
-	brew "ruby"
-	EOS
+ruby:
+	brew bundle --file=$(DOTFILES_DIR)/install/ruby.Brewfile
 
 brew-packages: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Brewfile
